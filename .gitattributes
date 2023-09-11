@@ -4,30 +4,45 @@ public class arvauspeli1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		{
+		
 
 
  			Scanner in = new Scanner (System.in); 
-			String vastaus = "";
+			String oikeaNimi = "Heidi";
+			String vastaus;
 			
-			
-			{
 			System.out.println("Arvaa nimi?");
+		do 	
+			{
+			
 			vastaus = in.nextLine();
 
-			if(vastaus.equals("Heidi"))
+			if(vastaus.equals(oikeaNimi))
 				
 			{
-				System.out.println("Peli loppui!");
-			
-		}
-			while (vastaus.equals("Heidi"));
-		
-		{
-			System.out.println("Yritä uudestaan!");
-			vastaus = in.nextLine();
-		}
+				System.out.println("Arvasit oikein.Peli loppui!");
+				break;
 			}
-		}
+			
+			else if (vastaus.equals("loppu"))
+			
+			{ 
+				System.out.println("Peli loppui!");
+				break;
+			}
+			
+			else
+				
+			{
+				System.out.println("Arvasti väärin, yritä uudestaan!");
+				
+			}
+			
+			}
+				while (true);
+			
+			System.out.println("loppuuko tämä ikinä?");
 	}
-}		
+}
+	
+	
