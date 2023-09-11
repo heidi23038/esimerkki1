@@ -21,7 +21,12 @@ public class arvauspeli1 {
 				System.out.println("Peli loppui!");
 			
 		}
-			
+			while (vastaus.equals("Heidi"));
+		
+		{
+			System.out.println("Yritä uudestaan!");
+			vastaus = in.nextLine();
+		}
 			}
 		}
 	}
