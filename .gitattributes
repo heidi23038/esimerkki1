@@ -10,13 +10,14 @@ public class arvauspeli1 {
  			Scanner in = new Scanner (System.in); 
 			String oikeaNimi = "Heidi";
 			String vastaus;
+			int arvaustenMaara = 0;
 			
 			System.out.println("Arvaa nimi?");
 		do 	
 			{
 			
 			vastaus = in.nextLine();
-
+			arvaustenMaara++;
 			if(vastaus.equals(oikeaNimi))
 				
 			{
@@ -41,8 +42,6 @@ public class arvauspeli1 {
 			}
 				while (true);
 			
-			System.out.println("loppuuko tämä ikinä?");
+			System.out.println("Arvasit " + arvaustenMaara + " kertaa");
 	}
 }
-	
-	
