@@ -1,2 +1,28 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# import java.util.Scanner;
+public class arvauspeli1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		{
+
+
+ 			Scanner in = new Scanner (System.in); 
+			String vastaus = "";
+			
+			
+			{
+			System.out.println("Arvaa nimi?");
+			vastaus = in.nextLine();
+
+			if(vastaus.equals("Heidi"))
+				
+			{
+				System.out.println("Peli loppui!");
+			
+		}
+			
+			}
+		}
+	}
+}		
